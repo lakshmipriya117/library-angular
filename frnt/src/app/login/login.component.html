@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div class="col-lg-6 fMargin shadow p-3 mb-5 bg-white rounded m" style="width: 20em;">
+    <form (ngSubmit)="onsubmit()" style="margin-top: 45%;" ngNativeValidate>
+      <h1>LOGIN</h1>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" name="uname" aria-describedby="emailHelp" [(ngModel)]="user.uname" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="pass" name="password" [(ngModel)]="user.pwd" required>
+        </div>
+        <button type="submit" class="btn get-started-btn">Sign In</button>
+      </form>
+ </div>
+ <br>
+ <app-footer></app-footer>

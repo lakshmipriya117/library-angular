@@ -1,0 +1,48 @@
+<app-header3></app-header3>
+<h1 style="margin-top: 20%; color: aqua;">REVIEW</h1>
+<div class="container">
+
+    <div class="row">
+
+      
+      
+
+      <div class="col-lg-9">
+
+        
+       
+         
+          <div class="row" >
+          <div class="col-lg-4 mb-4" *ngFor='let review of reviews'>
+            <div class="card h-100" >
+              <img  class="card-img-top"  src="{{ review.proImage}}" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="" style="color: rgb(231, 94, 94);">{{review.proName}}</a>
+                  &nbsp;<span>{{ review.proGenre}}</span>
+                </h4>
+               
+                <p class="card-text">{{review.proDesc}}</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Rating:{{review.proAuth}}</small>
+              </div>
+            </div>
+          </div>
+       
+
+          
+         
+
+          
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->

@@ -1,0 +1,55 @@
+<app-header3></app-header3>
+<div class="row">
+  <div class="col-lg-2">
+  </div>
+    <div class="col-lg-8 fMargin shadow p-3 mb-5 bg-white rounded">
+    <form   style="margin-top: 15%;" ngNativeValidate (ngSubmit)="AddReview()" method="GET">
+
+      <h1>Add Review </h1>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="input username"></label>
+          <input type="name" class="form-control"  name="f_name" placeholder="Book name..."  required [(ngModel)]="Item.proName"/>
+        </div>
+    
+        <div class="form-group col-md-6">
+          <label for="Genre"></label>
+          <input type="text" class="form-control"  name="f_genre" placeholder="Author.." required [(ngModel)]="Item.proAuth"/>
+        </div>
+      
+     
+            <div class="form-group col-md-6">
+                <label for="Genre"></label>
+                <input type="text" class="form-control"  name="f_genre" placeholder="Genre.." required [(ngModel)]="Item.proGenre"/>
+              </div>
+         
+              <div class="form-group col-md-6">
+                <label for="Genre"></label>
+                <input type="text" class="form-control"  name="f_desc" placeholder="Desc.." required [(ngModel)]="Item.proDesc"/>
+              </div>
+              <!-- <div class="form-group col-md-6">
+                <label for="Genre"></label>
+                <input type="text" class="form-control"  name="f_img" placeholder="Image URL.." [(ngModel)]="Item.proImage"/>
+              </div> -->
+            
+          
+         
+        </div>
+       
+          
+      
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check" required >
+            <label class="form-check-label" for="gridCheck"><br>
+                Check me out
+            </label>
+          </div>
+        </div>
+        <br>
+      <button type="submit" class="btn get-started-btn">Submit</button>
+    </form>
+</div>
+</div>
+
+<app-footer></app-footer>
